@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h3><a href="/">HOME</a></h2>
+        <h2>Welcome To Home</h2>
+
+        <a href="/about">About</a>
+        <a href="/blogs/create">New Blog</a>
+
+        
+        <div>
+            <h3>All Blogs</h3>
+
+            <% if (blogs.length) { %>
+                <% blogs.forEach(blog => { %>
+                    <div>
+                        <span style="font-size:large"><%= blog.title %> - <%= blog.snippet %></span><br/>
+                        <span><%= blog.description %></span><br/>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <h3>No blog available</h3>
+            <% } %>
+        </div>
+    </body>
+</html>
