@@ -5,16 +5,16 @@
         <%- include('./partials/nav.ejs') %>
         
         <div>
-            <h2>Welcome To Home</h2>
+            <h3>Welcome To Home</h3>
         </div>
-        <div>
+        <div class="middle-flex">
             <h3>All Blogs</h3>
 
             <% if (blogs.length) { %>
                 <% blogs.forEach(blog => { %>
-                    <div>
-                        <span style="font-size:large"><%= blog.title %> - <%= blog.snippet %></span><br/>
-                        <span><%= blog.description %></span><br/>
+                    <div class="blog-box">
+                        <div class="box-header"><%= blog.title %> - <%= blog.snippet %></div><br/>
+                        <div><%= blog.description %></div><br/>
                     </div>
                 <% }); %>
             <% } else { %>
@@ -22,5 +22,6 @@
             <% } %>
         </div>
     </section>
+    <%- include('./partials/footer.ejs') %>  
     </body>
 </html>

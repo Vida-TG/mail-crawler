@@ -1,8 +1,8 @@
 <html>
     <%- include('./partials/head.ejs') %>   
     <body>
-        <h2><a href="/">HOME</a></h2>
-        <h2>Create A nEW blog</h2>
+        <%- include('./partials/nav.ejs') %>
+        <h2>Create A New Blog</h2>
 
         <div>
             <form>
@@ -12,8 +12,9 @@
                 <input type="text" id="snippet" required>
                 <label for="title">Blog title</label>
                 <textarea id="body" required></textarea>
-                <button>Submit</button>
+                <button class="create-submit-btn">Submit</button>
             </form>
         </div>
+        <%- include('./partials/footer.ejs') %>
     </body>
 </html>

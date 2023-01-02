@@ -1,0 +1,74 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #eee;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    font-family: monospace;
+}
+.main-header{
+    margin-top: 0px;
+    font-size:  17px;
+}
+.nav-txt{
+    font-size: 13px;
+}
+.split-nav{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.header-link{
+    text-decoration: none;
+    color: rgb(73, 121, 224);
+}
+section{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.middle-flex{
+    width: 800px;
+}
+.blog-box{
+    margin: 20px auto 10px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 1px #333;
+}
+.box-header{
+    font-size: large;
+    margin: 10px auto;
+}
+form{
+    width: 800px;
+    margin: 10px auto;
+}
+form > label {
+    display: block;
+    margin: 10px auto;
+}
+form > #title, #snippet {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+}
+form > #body {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.footer{
+    width: 130px;
+    font-size: 12px;
+    margin: 20px auto 0px auto;
+}
+.create-submit-btn{
+    margin: 20px auto;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
