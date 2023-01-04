@@ -7,7 +7,7 @@ mongoose.set('strictQuery', true);
 const app = express();
 app.set('view engine', 'ejs');
 
-const dbURi = 'mongodb+srv://ViDA:test12345@cluster0.3hmjro0.mongodb.net?retryWrites=true&w=majority';
+const dbURi = 'mongodb+srv://ViDA:test12345@cluster0.3hmjro0.mongodb.net/node-blg?retryWrites=true&w=majority';
 mongoose.connect(dbURi)
 .then((result) => {console.log(app.listen(5000))})
 .catch((err) => {console.log("Error connecting")})
