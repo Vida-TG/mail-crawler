@@ -34,7 +34,7 @@ app.get('/about-me', (req, res) => {
 })
 
 app.get('/blogs/create', (req, res) => {
-    res.render('createBlog', { title: 'Create'});
+    res.render('createBlog', { title: 'Create Blog'});
 })
 app.use((req, res) => {
     res.status(404).render('404', {title:"404"});
